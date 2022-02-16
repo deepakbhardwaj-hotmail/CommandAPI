@@ -1,7 +1,7 @@
 using CommandAPI.Data;
 using CommandAPI.Models;
 
-namespace Common.Data;
+namespace CommandAPI.Data;
 public class MockCommandAPIRepo : ICommandAPIRepo
 {
     public void CreateCommand()
@@ -28,7 +28,7 @@ public class MockCommandAPIRepo : ICommandAPIRepo
     public Command GetCommandById(int id)
     {
         return 
-            new Command{Id=0,HowTo="How to generate a migration", CommandLine="dotnet ef migrations add <Name of Migration>",Platform=".net core ef"},
+            new Command{Id=0,HowTo="How to generate a migration", CommandLine="dotnet ef migrations add <Name of Migration>",Platform=".net core ef"};
             
        
     }
