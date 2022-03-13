@@ -28,8 +28,6 @@ public class MockCommandAPIRepo : ICommandAPIRepo
     {
         return 
             new Command{Id=0,HowTo="How to generate a migration", CommandLine="dotnet ef migrations add <Name of Migration>",Platform=".net core ef"};
-            
-       
     }
 
     public bool SaveChanges()
